@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+    <head>
+        <link rel="stylesheet" href="../Bon-Ap-Petit/Resources/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        
+        <header>
+            <h1 class="logo">Bon Ap' Petit Bistro</h1>
+            <ul class="nav">
+                <li><a href="../Bon-Ap-Petit/index.html">Home</a></li>
+                <li><a href="../Bon-Ap-Petit/About.html">About</a></li>
+                <li><a href="../Bon-Ap-Petit/Menu.html">Menu</a></li>
+                <li><a href="../Bon-Ap-Petit/Booking.html">Book</a></li>
+            </ul>
+        </header>
+        
+        <div class="container">
+            <form target="_blank" action="https://formsubmit.co/alf.lafosse@gmail.com" method="POST">
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="col">
+                            <input type="email" name="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="col">
+                            <input type="number" name="number" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                        <div class="col">
+                            <input type="date" name="date" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Amount of People" class="form-control" name="Amount of People" rows="2" required></textarea>
+                </div>
+                <div class="check-form-group">
+                    <label>Preferred Time:</label>
+                    <div class="checkbox-div">
+                        <label for="time10">10am</label>
+                        <input type="checkbox" id="time10" name="Time" value="10am">
+                        
+                    </div>
+                    <div class="checkbox-div">
+                        <label for="time1030">10:30am</label>
+                        <input type="checkbox" id="time1030" name="Time" value="10:30am">
+                        
+                    </div>
+                    <div class="checkbox-div">
+                        <label for="time11">11am</label>
+                        <input type="checkbox" id="time11" name="Time" value="11am">
+                        
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+            </form>
+        </div>
+
+        <div class="Schedule"></div>
+    </body>
+    <footer>
+        <a href="https://maps.app.goo.gl/6K8uryUDxZFhAdMT7" target="_blank">193 Brunswick St, Fitzroy VIC 3065</a>
+        <ul>
+            <li><a href="#+61423159850">(+61) 423 159 850</a></li>
+            <li><a href="mailto:alfonsolafosse@gmail.com" target="_blank">BONAP@Bistro.com</a></li>
+        </ul>
+    </footer>
+</html>

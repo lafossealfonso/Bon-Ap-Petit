@@ -1,0 +1,331 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    animation: fade-in 0.5s ease-in-out;
+}
+
+html body{
+    height: 100%;
+    margin: 0;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    background-color: #1d171f;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+h1{
+    font-family: Bebas Neue;
+    font-size: 6em;
+    color: #fff;
+    font-weight: 400;
+    padding: 0%;
+    
+}
+
+header h1{
+    margin: 0px 0px 0px 2%;
+}
+.nav{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 180px;
+    margin: auto;
+}
+
+
+li a{
+    font-family: Bebas Neue;
+    font-size: 3em;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0%;
+    padding: 0%;
+    align-self: center;
+    transition: color 0.1s ease-in-out;
+}
+a{
+    font-family: Bebas Neue;
+    font-size: 3em;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0%;
+    padding: 0%;
+    align-self: center;
+    transition: color 0.1s ease-in-out;
+}
+
+li a:hover{
+    color: #CB4700;
+}
+footer{
+    display: flex;
+}
+
+footer ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    column-gap: 100px;
+    margin-left: 30%;
+}
+h2{
+    font-family: Bebas Neue;
+    font-size: 3em;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0%;
+    padding: 0%;
+    align-self: center;
+    transition: color 0.1s ease-in-out;
+}
+
+footer{
+    background-color: #1d171f;
+    padding: 2%;
+}
+
+.scrollContent {
+    height: 900px; 
+    width: 100%; 
+    overflow: hidden; 
+    position: relative;
+    background-image: url(../Resources/HeroImage.png);
+    background-size: cover;
+    margin-top: -150px;
+    position: relative;
+    z-index: 0;
+}
+
+.aboutScrollContent {
+    height: auto; 
+    width: 100%; 
+    overflow: hidden; 
+    position: relative;
+    background-color: #1d171f;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+
+.scroll {
+    display: flex;
+    white-space: nowrap;
+    margin-top: 540px;
+}
+
+.aboutScroll {
+    display: flex;
+    white-space: nowrap;
+}
+
+h3 {
+    font-family: "Archivo Narrow", sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    color: #1d171f;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.scroll h3 {
+    animation: scroll 10s infinite linear; /* Smooth, continuous animation */
+    background-color: #CBCAC8;
+}
+
+.aboutScroll h3 {
+    animation: aboutScroll 8s infinite linear; /* Smooth, continuous animation */
+}
+
+@keyframes aboutScroll {
+    from {
+        transform: translateX(0%); /* Start text offscreen to the right */
+    }
+    to {
+        transform: translateX(-100%); /* Move text completely offscreen to the left */
+    }
+}
+.aboutScroll h3 {
+    font-family: "Archivo Narrow", sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    color: #ee6217;
+    margin: 0;
+    padding: 0 10px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0%); /* Start text offscreen to the right */
+    }
+    to {
+        transform: translateX(-100%); /* Move text completely offscreen to the left */
+    }
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 900px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1.7% 0%;
+    background-color: #1d171f;
+}
+
+
+
+form{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    background-color: #1d171f;
+    border: solid white 3px;
+    margin: 0.35em 0em;
+}
+
+input[type="text"]{
+    color: #fff;
+}
+
+input[type="email"]{
+    color: #fff;
+}
+
+input[type="number"]{
+    color: #fff;
+}
+
+input[type="date"]{
+    color:#767676;
+}
+
+label{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2em;
+    background-color: #1d171f;
+    color: #fff;
+}
+
+input::placeholder{
+    color: #767676;
+}
+
+.checkbox-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+textarea{
+    width: 100%;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    background-color: #1d171f;
+    border: solid white 3px;
+    margin: 0.35em 0em;
+    color: #fff;
+}
+
+button{
+    width: 50%;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    background-color: #ee6217;
+    border: solid white 3px;
+    margin: 0.35em 0em;
+    transition: background-color 0.15s ease-in-out;
+}
+
+button:hover{
+    background-color: #CB4700;
+    cursor: pointer;
+}
+
+button[type="submit"]{
+    color: #fff;
+}
+
+.aboutContent{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.about{
+    font-family: Bebas Neue;
+    font-size: 6em;
+    color: #fff;
+    font-weight: 400;
+    background-color: #1d171f;
+    margin: 0px;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.aboutBody{
+    background-color: #1d171f;
+}
+
+.aboutContent p{
+    background-color: #1d171f;
+    color: #fff;
+    font-family: Archivo Narrow;
+    font-size: 2em;
+    margin: 0px auto ;
+    width: 50%;
+    padding: 2% 0px 0.2% 0px;
+    text-align: center;
+}
+
+.aboutTextContent{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+
+
